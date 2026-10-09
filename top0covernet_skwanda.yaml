@@ -1,0 +1,75 @@
+# Top0CoverNet+ on sKwanda_V2 — settings of Sec. IV-B of the paper.
+experiment:
+  name: top0covernet_skwanda
+  work_dir: work_dirs/top0covernet_skwanda
+  seed: 42
+
+data:
+  root: data/sKwanda_V2/patches          # contains images/ and labels/
+  split_dir: data/sKwanda_V2/splits      # fold{k}_{train,val,test}.txt from tools/make_patches.py
+  fold: 0
+  ignore_index: 255
+  neb_width: 1
+  num_workers: 4
+  mean: null                             # set dataset-level statistics if normalising beyond [0,1]
+  std: null
+  class_map: null                        # e.g. {1: 0, 2: 1, ...} for label harmonisation
+  augmentation:
+    flip_p: 0.5
+    rotate_deg: 45
+    elastic_alpha: 120
+    elastic_sigma: 6
+    elastic_p: 0.3
+    noise_sigma: 0.02
+    brightness: 0.2
+    contrast: 0.2
+    band_shuffle_p: 0.0                  # > 0 only for multispectral inputs
+
+model:
+  num_classes: 8
+  in_channels: 3
+  encoder_mode: dual                     # dual | cnn (CE only) | vit (TE only)
+  cnn_channels: [32, 64, 128, 256, 512]
+  kernel_proportion: [1.0, 0.5, 0.25]    # Top0Net^omega; see Table VII for alternatives in man paper
+  vit_dim: 256
+  vit_depth: 4
+  vit_heads: 8
+  patch_size: 16
+  fusion_dim: 128
+  graph_source: all                      # all | last (last-layer variant)
+  use_nebrlm: true
+  use_gtrm: true
+  gtrm_depth: 2
+  valid_threshold: 0.3                   # tau_valid
+  min_region_size: 16
+  node_pooling: concat                   # concat | avg | max
+  decoder_channels: [128, 96, 64, 48, 32]
+
+loss:
+  lambda_edge: 0.5
+  lambda_topo: 0.3
+  lambda_compact: 0.2
+  pos_weight: 8.0
+  topo_size: 64
+  aux_weight: 0.4                        # deep supervision of coarse heads
+
+train:
+  epochs: 200
+  batch_size: 16
+  lr: 1.0e-3
+  min_lr: 1.0e-5
+  lr_step: 10
+  lr_gamma: 0.95
+  weight_decay: 0.01
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+  patience: 20
+  amp: false
+  grad_clip: null
+  log_interval: 20
+
+eval:
+  batch_size: 4
+  structural: true
+  bf1_tolerance: 2
+  min_region: 16

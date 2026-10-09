@@ -1,0 +1,11 @@
+torch>=2.0
+torchvision>=0.15
+numpy>=1.23
+scipy>=1.9
+opencv-python>=4.6
+PyYAML>=6.0
+gudhi>=3.8          # persistent-homology loss
+tifffile>=2022.8    # multi-band GeoTIFF reading
+thop>=0.1           # FLOPs in benchmark.py
+rasterio>=1.3       # optional: georeferenced outputs in inference.py
+imagecodecs>=2022.8 # optional: LZW/Deflate GeoTIFFs via tifffile
