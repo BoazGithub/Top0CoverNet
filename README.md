@@ -125,6 +125,8 @@ structure inside the gradient path.
 <img width="758" height="237" alt="image" src="https://github.com/user-attachments/assets/562eb64d-7271-4995-9e9b-1d82640b60ff" />
 Overview of Top0CoverNet+. Input high-resolution imagery; dual-branch CNN–ViT encoder; NEBRLM; GTRM over valid zones; multi-scale fusion;
 decoder emitting semantic and NEB maps. Shaded path marks the gradient route.
+
+
 ```mermaid
 graph TB
     A[Input Image<br/>H×W×C] --> B1[CNN Branch<br/>multi-kernel residual 1×1/3×3/5×5]
