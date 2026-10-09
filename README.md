@@ -2,7 +2,8 @@
 
 # <h3 align="center">Top0CoverNet⁺: Cross-Topology as a Learning Signal for Structurally Consistent Remote Sensing and Natural Image Segmentation</h3>
 <img width="2666" height="999" alt="image" src="https://github.com/user-attachments/assets/4c4d2033-70a8-4576-b031-eef70b35a719" />
-Conceptual framework of Top0CoverNet+. Left: multi-sensor Earth observation (optical, LiDAR, and radar platforms, UAVs, and ground stations)
+
+Fig.1: Conceptual framework of Top0CoverNet+. Left: multi-sensor Earth observation (optical, LiDAR, and radar platforms, UAVs, and ground stations)
 provides high-resolution imagery. Top right: conventional pixel-wise mappings Y = f(X) produce land-cover maps from pixel-level predictions. Middle right:
 existing methods versus Top0CoverNet+: (a) image; (b) ground truth; (c) baseline prediction with boundary errors; (d) absolute error; (e) edge refinement by
 Top0CoverNet+; and (f) high-level semantics. Top0CoverNet+integrates region-level reasoning and geometric constraints to reduce structural errors. Bottom:
@@ -123,7 +124,8 @@ structure inside the gradient path.
 
 ## 🏗️ Architecture
 <img width="758" height="237" alt="image" src="https://github.com/user-attachments/assets/562eb64d-7271-4995-9e9b-1d82640b60ff" />
-Overview of Top0CoverNet+. Input high-resolution imagery; dual-branch CNN–ViT encoder; NEBRLM; GTRM over valid zones; multi-scale fusion;
+
+Fig.2: Overview of Top0CoverNet+. Input high-resolution imagery; dual-branch CNN–ViT encoder; NEBRLM; GTRM over valid zones; multi-scale fusion;
 decoder emitting semantic and NEB maps. Shaded path marks the gradient route.
 
 
@@ -311,12 +313,15 @@ out["label"].shape, out["neb_prob"].shape   # (1, 512, 512), (1, 512, 512)
 
 ## 📊 Results
 <img width="732" height="253" alt="image" src="https://github.com/user-attachments/assets/07682b4a-8fc7-4ba5-95ff-7ec2aaa42b37" />
-Feature responses learned by Top0CoverNet+ on sKwanda V2. (a) Built-up scene; (b) road-interchange scene. Rows, top to bottom: input coarse
+
+Fig.3: Feature responses learned by Top0CoverNet+ on sKwanda V2. (a) Built-up scene; (b) road-interchange scene. Rows, top to bottom: input coarse
 map; CNN-branch responses at kernel sizes 1×1, 3×3, and 5×5 (Eq. (3)); NEBRLM directional responses, with the binary NEB map in (a8) and (b8);
 multi-scale edge responses fused into the final NEB response (Eq. (6)). As the scale index increases, the response concentrates along parcel and building
 outlines rather than across region interiors.
+
 <img width="743" height="190" alt="image" src="https://github.com/user-attachments/assets/151ff594-2de2-4fc2-ba20-201dca0bb5ee" />
-Bottleneck representation of Top0CoverNet+ on Cityscapes. (a) Image; (b)–(c) mean E5 activation (3×8×512); (d) road probability; (e)–(g) top-3
+
+Fig.4: Bottleneck representation of Top0CoverNet+ on Cityscapes. (a) Image; (b)–(c) mean E5 activation (3×8×512); (d) road probability; (e)–(g) top-3
 channels; (h) overlay. Dominant channels respond to the coherent road region rather than isolated pixels.
 ### 🏆 Comparison on sKwanda_V2
 
