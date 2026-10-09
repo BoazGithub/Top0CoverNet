@@ -412,17 +412,41 @@ The paper is under review; a full BibTeX entry will be added upon publication.
 ### 📚 Related Publications
 
 ```bibtex
+@ARTICLE{11579418,
+  author={Mwubahimana, Boaz and Miao, Dingruibo and Jianguo, Yan and Ma, Le and Dukundane, Remy and Huang, Xiao and Roy, Swalpa Kumar and Wang, Ruisheng},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={TagParaFormer: Cross-Hybrid Attention Learning Framework for Topology-Aware Road Network Extraction From Remote Sensing Imagery}, 
+  year={2026},
+  volume={64},
+  number={},
+  pages={5630917-5630917},
+  keywords={Roads;Modeling;Convolutional neural networks;Topology;Optimization;Pixel;Remote sensing;Modules (abstract algebra);Accuracy;Educational institutions;Bayesian optimization;convolutional neural networks (CNNs);graph attention network;remote sensing (RS);road network extraction;topology-preserving segmentation;vision transformer (ViT)},
+  doi={10.1109/TGRS.2026.3707401}}
+
+
 @ARTICLE{11343844,
   author={Mwubahimana, Boaz and Jianguo, Yan and Miao, Dingruibo and Roy, Swalpa Kumar and Li, Zhuohong and Ma, Le and Kagoyire, Clarisse and Guo, Haonan and Mugabowindekwe, Maurice and Nyandwi, Elias and Nzayisenga, Isaac and Athanase, Hafashimana and Maridadi, Eugene and Nsengiyumva, Jean Baptiste and Byukusenge, Elie and Dukundane, Remy and Rwanyiziri, Gaspard and Huang, Xiao},
-  journal={IEEE Transactions on Geoscience and Remote Sensing},
-  title={FWDNNet: Cross-Heterogeneous Encoder Fusion via Feature-Level TensorDot Operations for Land-Cover Mapping},
-  year={2026}, pages={1-1}, doi={10.1109/TGRS.2026.3652451}}
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={FWDNNet: Cross-Heterogeneous Encoder Fusion via Feature-Level TensorDot Operations for Land-Cover Mapping}, 
+  year={2026},
+  volume={64},
+  number={},
+  pages={1-19},
+  keywords={Remote sensing;Transformers;Computer architecture;Feature extraction;Semantic segmentation;Computational modeling;Computational efficiency;Semantics;Land surface;Faces;Convolutional neural network (CNN)-to-token conversion;deep learning;remote sensing (RS) segmentation;TensorDot fusion},
+  doi={10.1109/TGRS.2026.3652451}}
+
 
 @ARTICLE{11124258,
   author={Mwubahimana, Boaz and Jianguo, Yan and Miao, Dingruibo and Li, Zhuohong and Guo, Haonan and Ma, Le and Mugabowindekwe, Maurice and Roy, Swalpa Kumar and Huang, Xiao and Nyandwi, Elias and Joseph, Tuyishimire and Habineza, Eric and Mwizerwa, Fidele and Athanase, Hafashimana and Rwanyiziri, Gaspard},
-  journal={IEEE Transactions on Geoscience and Remote Sensing},
-  title={C2FNet: Cross-Probabilistic Weak Supervision Learning for High-Resolution Land Cover Enhancement},
-  year={2025}, volume={63}, pages={1-30}, doi={10.1109/TGRS.2025.3598681}}
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={C2FNet: Cross-Probabilistic Weak Supervision Learning for High-Resolution Land Cover Enhancement}, 
+  year={2025},
+  volume={63},
+  number={},
+  pages={1-30},
+  keywords={Spatial resolution;Remote sensing;Land surface;Weak supervision;Training;Feature extraction;Annotations;Image resolution;Noise measurement;Earth;Coarse-to-fine networks (C2FNets);cross-resolution learning;deep neural networks;Earth observation;land cover mapping;probabilistic supervision;remote sensing;weakly supervised learning (WSL)},
+  doi={10.1109/TGRS.2025.3598681}}
+
 ```
 
 ---
