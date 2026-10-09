@@ -2,8 +2,7 @@
 
 # <h3 align="center">Top0CoverNet⁺: Cross-Topology as a Learning Signal for Structurally Consistent Remote Sensing and Natural Image Segmentation</h3>
 <img width="2666" height="999" alt="image" src="https://github.com/user-attachments/assets/4c4d2033-70a8-4576-b031-eef70b35a719" />
-<img width="758" height="237" alt="image" src="https://github.com/user-attachments/assets/562eb64d-7271-4995-9e9b-1d82640b60ff" />
-<img width="743" height="190" alt="image" src="https://github.com/user-attachments/assets/151ff594-2de2-4fc2-ba20-201dca0bb5ee" />
+
 
 
 
@@ -80,6 +79,7 @@
 </div>
 
 <br>
+<img width="758" height="237" alt="image" src="https://github.com/user-attachments/assets/562eb64d-7271-4995-9e9b-1d82640b60ff" />
 
 A segmentation map can be correct at nearly every pixel and still be unusable: parcels fragment into
 disconnected pieces, boundaries drift from the true outline, and shapes become implausible. The cause is the
@@ -136,7 +136,7 @@ graph TB
     style E fill:#99ccff
     style F fill:#ffcc99
 ```
-
+<img width="743" height="190" alt="image" src="https://github.com/user-attachments/assets/151ff594-2de2-4fc2-ba20-201dca0bb5ee" />
 ### 🧩 Core Components
 
 <details>
